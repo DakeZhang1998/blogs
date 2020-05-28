@@ -1,0 +1,92 @@
+<!DOCTYPE html><html lang="en"><head><meta name="generator" content="Hexo 3.9.0"><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta name="description" content="LaTeX入门 第二部分"><meta name="keywords" content="LaTeX"><meta name="author" content="张大珂 Dake Zhang"><meta name="copyright" content="张大珂 Dake Zhang"><title>LaTeX入门 第二部分 | Dake Zhang's Website</title><link rel="shortcut icon" href="/melody-favicon.ico"><link rel="stylesheet" href="/css/index.css?version=1.6.1"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@latest/css/font-awesome.min.css?version=1.6.1"><link rel="dns-prefetch" href="https://cdn.staticfile.org"><link rel="dns-prefetch" href="https://cdn.bootcss.com"><link rel="dns-prefetch" href="https://creativecommons.org"><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.css"><script src="https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.js"></script><script src="https://cdn.jsdelivr.net/npm/blueimp-md5@2.10.0/js/md5.min.js"></script><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><script>(adsbygoogle = window.adsbygoogle || []).push({
+  google_ad_client: 'ca-pub-1982725577010543',
+  enable_page_level_ads: 'true'
+});
+</script><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  }
+} </script></head><body><i class="fa fa-arrow-right" id="toggle-sidebar" aria-hidden="true"></i><div id="sidebar"><div class="toggle-sidebar-info text-center"><span data-toggle="Toggle article">Toggle site</span><hr></div><div class="sidebar-toc"><div class="sidebar-toc__title">Catalog</div><div class="sidebar-toc__progress"><span class="progress-notice">You've read</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar"></div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#I-列表"><span class="toc-number">1.</span> <span class="toc-text">I. 列表</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#II-表格"><span class="toc-number">2.</span> <span class="toc-text">II. 表格</span></a></li></ol></div></div><div class="author-info hide"><div class="author-info__avatar text-center"><img src="/img/avatar.jpg"></div><div class="author-info__name text-center">张大珂 Dake Zhang</div><div class="author-info__description text-center"></div><div class="follow-button"><a href="https://github.com/RickyZhang1998">Follow Me on Github</a></div><hr><div class="author-info-articles"><a class="author-info-articles__archives article-meta" href="/archives"><span class="pull-left">Articles</span><span class="pull-right">7</span></a><a class="author-info-articles__tags article-meta" href="/tags"><span class="pull-left">Tags</span><span class="pull-right">5</span></a></div></div></div><div id="content-outer"><div id="top-container" style="background-image: url(/img/top_img.jpg)"><div id="page-header"><span class="pull-left"> <a id="site-name" href="/">Dake Zhang's Website</a></span><i class="fa fa-bars toggle-menu pull-right" aria-hidden="true"></i><span class="pull-right menus"><a class="site-page" href="/">Home</a><a class="site-page" href="/archives">Archives</a><a class="site-page" href="/tags">Tags</a><a class="site-page" href="/categories">Categories</a><a class="site-page" href="/about">About Me</a></span></div><div id="post-info"><div id="post-title">LaTeX入门 第二部分</div><div id="post-meta"><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> 2019-01-18</time></div></div></div><div class="layout" id="content-inner"><article id="post"><div class="article-container" id="post-content"><p>书接上文，本次重点讲述LaTeX中列表和表格的使用。</p>
+<a id="more"></a>
+<h2 id="I-列表"><a href="#I-列表" class="headerlink" title="I. 列表"></a>I. 列表</h2><ol>
+<li>LaTeX支持的列表类型包括：Itemize, Enumerate, Description, Cases。</li>
+<li><p>Itemize:</p>
+ <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">\begin&#123;itemize&#125;</span><br><span class="line">	\item This is item 1.</span><br><span class="line">	\begin&#123;itemize&#125;</span><br><span class="line">		\item This is a subitem.     % 支持嵌套，缩进是为了区分层次，并不必要</span><br><span class="line">	\end&#123;itemize&#125;</span><br><span class="line">	\item This is item 2.</span><br><span class="line">\end&#123;itemize&#125;</span><br></pre></td></tr></table></figure>
+<p> 效果如下：<br> <img src="https://img-blog.csdnimg.cn/20190114152428939.png" alt="Itemize示例"></p>
+</li>
+<li><p>Enumerate类型在Itemize基础上加上了数字，相当于有序列表。</p>
+ <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">\begin&#123;enumerate&#125;</span><br><span class="line">	\item This is item 1.</span><br><span class="line">	\begin&#123;enumerate&#125;</span><br><span class="line">		\item This is a subitem.</span><br><span class="line">	\end&#123;enumerate&#125;</span><br><span class="line">	\item This is item 2.</span><br><span class="line">\end&#123;enumerate&#125;</span><br></pre></td></tr></table></figure>
+<p> 效果图如下：<br> <img src="https://img-blog.csdnimg.cn/2019011415284620.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwOTg5ODY2,size_16,color_FFFFFF,t_70" alt="Enumerate示例"><br> 如果想要更改默认的标号，则需要先引用宏包<code>\usepackage{enumerate}</code>，然后在begin语句之后指定使用的标号，例如<code>\begin{enumerate}[A.]</code>、<code>\begin{enumerate}[a.]</code>、<code>\begin{enumerate}[\bfseries A]</code>（使标号变成粗体且没有字母后面的点号）。<br> 注1：使用<code>\sffamily</code>命令可以使用<a href="https://baike.baidu.com/item/%E6%97%A0%E8%A1%AC%E7%BA%BF%E4%BD%93/2374029?fr=aladdin" target="_blank" rel="noopener">无衬线字体</a>。<br> 注2：如果想要从指定大小的标号开始计数，例如从E开始，可以使用计数器。</p>
+ <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">\begin&#123;enumerate&#125;</span><br><span class="line">\setcounter&#123;enumi&#125;&#123;4&#125;    % 使用计数器，enum表示enumerate环境，而i表示第一层，ii表示第二层</span><br><span class="line">                         % 4表示之后在4的基础之上进行增加，即5，6，7，8</span><br><span class="line">	\item This is item 1.</span><br><span class="line">	\item This is item 2.</span><br><span class="line">\end&#123;enumerate&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h2 id="II-表格"><a href="#II-表格" class="headerlink" title="II. 表格"></a>II. 表格</h2><ol>
+<li><p>最基本的表格环境是<code>tabular</code>。基本格式如下：</p>
+ <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">\begin&#123;tabular&#125;&#123;|c|l|r|&#125;       % 需要定义每一列单元格的对齐方式（c居中，l左对齐，r右对齐）</span><br><span class="line">                               % ‘|’表示表格列边框</span><br><span class="line">\hline                         % 表示表格行边框</span><br><span class="line">23&amp;76&amp;23\\                     % 正文中‘\\’表示回车，但是在表格里表示不同行的分隔</span><br><span class="line">\hline  </span><br><span class="line">34&amp;16&amp;90\\</span><br><span class="line">\hline </span><br><span class="line">\end&#123;tabular&#125;</span><br></pre></td></tr></table></figure>
+<p> 效果如下：<br> <img src="https://img-blog.csdnimg.cn/20190114182901329.png" alt="tabular示例"></p>
+</li>
+<li><p>如何将Excel中的表格转换成LaTeX格式？<br> （1）使用第三方宏包，不太安全。<br> （2）使用记事本+Excel。因为Excel不同单元格之间是用Tab进行分隔的，我们可以选中表格，然后粘贴到记事本当中，将‘Tab’替换成“ &amp; ”即可，然后在每一行的后面加上“\\”，最后指定对齐方式和边框即可。<br> 注：使用<code>\eject</code>命令可以另起一页。<br> 论文中常用的表格样式如下所示：</p>
+ <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">\begin&#123;tabular&#125;&#123;ccccc&#125;  </span><br><span class="line">\hline </span><br><span class="line">Month &amp; U-Disk &amp; Memory &amp; Card Reader &amp; Hard Disk\\</span><br><span class="line">\hline</span><br><span class="line">1 &amp; 107 &amp; 41 &amp; 96 &amp; 41\\</span><br><span class="line">2 &amp; 105 &amp; 44 &amp; 98 &amp; 65\\</span><br><span class="line">3 &amp; 96 &amp; 65 &amp; 121 &amp; 47\\</span><br><span class="line">4 &amp; 125 &amp; 61 &amp; 101 &amp; 47\\</span><br><span class="line">5 &amp; 121 &amp; 59 &amp; 113 &amp; 62\\</span><br><span class="line">6 &amp; 94 &amp; 50 &amp; 92 &amp; 44\\</span><br><span class="line">7 &amp; 114 &amp; 58 &amp; 118 &amp; 44\\</span><br><span class="line">8 &amp; 110 &amp; 52 &amp; 93 &amp; 43\\</span><br><span class="line">9 &amp; 115 &amp; 41 &amp; 94 &amp; 59\\</span><br><span class="line">10 &amp; 100 &amp; 51 &amp; 102 &amp; 59\\</span><br><span class="line">11 &amp; 99 &amp; 48 &amp; 99 &amp; 58\\</span><br><span class="line">12 &amp; 123 &amp; 58 &amp; 116 &amp; 52\\</span><br><span class="line">\hline</span><br><span class="line">\end&#123;tabular&#125;</span><br></pre></td></tr></table></figure>
+<p> 效果如下：<br> <img src="https://img-blog.csdnimg.cn/20190114185146396.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwOTg5ODY2,size_16,color_FFFFFF,t_70" alt="论文常见表格样式"></p>
+</li>
+<li>“tabular”的一个缺陷是我们无法添加标题，而“table”则是更高级的存在。</li>
+<li><p>通过使用快捷键，我们可以创建一个“table”（不同的软件生成的代码可能不同）。</p>
+ <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">% TeXShop的table宏生成的代码：</span><br><span class="line">\begin&#123;table&#125;[htp]</span><br><span class="line">\caption&#123;default&#125;         % 给出表格的名字，“\label&#123;*&#125;”用来作为超链接检索的标签</span><br><span class="line">\begin&#123;center&#125;            % 有些软件生成的是“\centering”，表示表格中所有单元格的对齐方式为居中</span><br><span class="line">\begin&#123;tabular&#125;&#123;|c|c|&#125;</span><br><span class="line"></span><br><span class="line">\end&#123;tabular&#125;</span><br><span class="line">\end&#123;center&#125;</span><br><span class="line">\label&#123;default&#125;</span><br><span class="line">\end&#123;table&#125;%</span><br></pre></td></tr></table></figure>
+<p> 练习：</p>
+ <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">\begin&#123;table&#125;[htp]</span><br><span class="line">\begin&#123;center&#125;</span><br><span class="line">\begin&#123;tabular&#125;&#123;ccccc&#125;</span><br><span class="line">\hline </span><br><span class="line">Month &amp; U-Disk &amp; Memory &amp; Card Reader &amp; Hard Disk\\</span><br><span class="line">\hline</span><br><span class="line">1 &amp; 107 &amp; 41 &amp; 96 &amp; 41\\</span><br><span class="line">2 &amp; 105 &amp; 44 &amp; 98 &amp; 65\\</span><br><span class="line">3 &amp; 96 &amp; 65 &amp; 121 &amp; 47\\</span><br><span class="line">4 &amp; 125 &amp; 61 &amp; 101 &amp; 47\\</span><br><span class="line">5 &amp; 121 &amp; 59 &amp; 113 &amp; 62\\</span><br><span class="line">6 &amp; 94 &amp; 50 &amp; 92 &amp; 44\\</span><br><span class="line">7 &amp; 114 &amp; 58 &amp; 118 &amp; 44\\</span><br><span class="line">8 &amp; 110 &amp; 52 &amp; 93 &amp; 43\\</span><br><span class="line">9 &amp; 115 &amp; 41 &amp; 94 &amp; 59\\</span><br><span class="line">10 &amp; 100 &amp; 51 &amp; 102 &amp; 59\\</span><br><span class="line">11 &amp; 99 &amp; 48 &amp; 99 &amp; 58\\</span><br><span class="line">12 &amp; 123 &amp; 58 &amp; 116 &amp; 52\\</span><br><span class="line">\hline</span><br><span class="line">\end&#123;tabular&#125;</span><br><span class="line">\caption&#123;Hardware Sales in 2018&#125;</span><br><span class="line">\end&#123;center&#125;</span><br><span class="line">\label&#123;default&#125;</span><br><span class="line">\end&#123;table&#125;%</span><br></pre></td></tr></table></figure>
+<p> 结果如下：<br> <img src="https://img-blog.csdnimg.cn/20190114191945794.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwOTg5ODY2,size_16,color_FFFFFF,t_70" alt="Table示例"></p>
+</li>
+<li>我们可以注意到，“Table 1: ”是系统自动添加的，这体现了LaTeX在排版方面的便捷。</li>
+<li><p>“table”中的其他命令：</p>
+<ol>
+<li><code>\multicolumn</code>可以将两列单元格合并。（<code>\multirow</code>命令需要引用“multirow”宏包，具体使用方法参照《LaTeX Companion》这本书）<br> 例如：<code>\multicolumn{2}{c}{1 107}</code><br> 参数分别表示：合并的单元格数量、合并之后的单元格对齐方式、单元格内的数据。<br> 效果如下：<img src="https://img-blog.csdnimg.cn/20190114193652950.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwOTg5ODY2,size_16,color_FFFFFF,t_70" alt="multicolumn示例"></li>
+<li><p><code>\cline</code>可以在指定位置添加横线。</p>
+ <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">2 &amp; 105 &amp; 44 &amp; 98 &amp; 65\\</span><br><span class="line">\cline&#123;3-4&#125;                      % 指定3-4列的横线</span><br><span class="line">3 &amp; 96 &amp; 65 &amp; 121 &amp; 47\\</span><br></pre></td></tr></table></figure>
+<p> 效果如下所示：<br> <img src="https://img-blog.csdnimg.cn/20190114194426475.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwOTg5ODY2,size_16,color_FFFFFF,t_70" alt="cline命令示例"></p>
+</li>
+<li>如果当前表格太长，以至于无法在一页显示，则需要引用<code>longtable</code>宏包，否则会出现数据显示不全的情况。代码如下： <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">\begin&#123;longtable&#125;&#123;ccccc&#125;</span><br><span class="line">\caption&#123;default&#125;\\        % 注意：此处的“\\”告诉编译器另起一行，省略会报错</span><br><span class="line">\hline </span><br><span class="line">Month &amp; U-Disk &amp; Memory &amp; Card Reader &amp; Hard Disk\\</span><br><span class="line">\hline</span><br><span class="line">1 &amp; 107 &amp; 41 &amp; 96 &amp; 41\\</span><br><span class="line">2 &amp; 105 &amp; 44 &amp; 98 &amp; 65\\</span><br><span class="line">% 此处省略多行</span><br><span class="line">\label&#123;default&#125;</span><br><span class="line">\end&#123;longtable&#125;%</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+</li>
+</ol>
+<p>(如果觉得这篇文章有用，欢迎扫描下方二维码支持作者！)<br>PS: If you think this post is helpful, welcome to scan the QR code below to support the author.</p>
+</div></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="mailto:undefined">张大珂 Dake Zhang</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="http://yoursite.com/2019/01/18/LaTeX入门——第二部分/">http://yoursite.com/2019/01/18/LaTeX入门——第二部分/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/LaTeX/">LaTeX</a></div><div class="post-qr-code"><div class="post-qr-code-item"><img class="post-qr-code__img" src="/img/alipay.png"><div class="post-qr-code__desc">Support - AliPay</div></div><div class="post-qr-code-item"><img class="post-qr-code__img" src="/img/wechat.png"><div class="post-qr-code__desc">Support - WechatPay</div></div></div><nav id="pagination"><div class="prev-post pull-left"><a href="/2019/01/19/LaTeX入门——第三部分/"><i class="fa fa-chevron-left">  </i><span>LaTeX入门 第三部分</span></a></div><div class="next-post pull-right"><a href="/2019/01/17/LaTeX入门——第一部分/"><span>LaTeX入门 第一部分</span><i class="fa fa-chevron-right"></i></a></div></nav><div class="post-adv"></div><div id="gitalk-container"></div><script>var gitalk = new Gitalk({
+  clientID: '8c2f71dce688ba07586d',
+  clientSecret: 'ed77b6728e947441a81c837bb3e679b66b0c9bec',
+  repo: 'RickyZhang1998.github.io',
+  owner: 'RickyZhang1998',
+  admin: 'RickyZhang1998',
+  id: md5(decodeURI(location.pathname)),
+  language: 'en'
+})
+gitalk.render('gitalk-container')</script></div></div><footer class="footer-bg" style="background-image: url(/img/top_img.jpg)"><div class="layout" id="footer"><div class="copyright">&copy;2018 - 2020 By 张大珂 Dake Zhang</div><div class="framework-info"><span>Driven - </span><a href="http://hexo.io"><span>Hexo</span></a><span class="footer-separator">|</span><span>Theme - </span><a href="https://github.com/Molunerfinn/hexo-theme-melody"><span>Melody</span></a></div><div class="footer_custom_text">生生不息，繁荣昌盛。Live long and prosper.</div><div class="busuanzi"><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><span id="busuanzi_container_page_pv"><i class="fa fa-file-o"></i><span id="busuanzi_value_page_pv"></span><span></span></span></div></div></footer><i class="fa fa-arrow-up" id="go-up" aria-hidden="true"></i><script src="https://cdn.jsdelivr.net/npm/animejs@latest/anime.min.js"></script><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@latest/velocity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-ui-pack@latest/velocity.ui.min.js"></script><script src="/js/utils.js?version=1.6.1"></script><script src="/js/fancybox.js?version=1.6.1"></script><script src="/js/sidebar.js?version=1.6.1"></script><script src="/js/copy.js?version=1.6.1"></script><script src="/js/fireworks.js?version=1.6.1"></script><script src="/js/transition.js?version=1.6.1"></script><script src="/js/scroll.js?version=1.6.1"></script><script src="/js/head.js?version=1.6.1"></script><script type="text/x-mathjax-config">MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+    processEscapes: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+  },
+  CommonHTML: {
+    linebreaks: { automatic: true, width: "90% container" }
+  },
+  "HTML-CSS": { 
+    linebreaks: { automatic: true, width: "90% container" }
+  },
+  "SVG": { 
+    linebreaks: { automatic: true, width: "90% container" }
+  }
+});
+</script><script type="text/x-mathjax-config">MathJax.Hub.Queue(function() {
+  var all = MathJax.Hub.getAllJax(), i;
+  for (i=0; i < all.length; i += 1) {
+    all[i].SourceElement().parentNode.className += ' has-jax';
+  }
+});
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><script>if(/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+  $('#nav').addClass('is-mobile')
+  $('footer').addClass('is-mobile')
+}</script></body></html>

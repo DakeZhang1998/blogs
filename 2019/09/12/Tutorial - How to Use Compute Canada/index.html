@@ -1,0 +1,176 @@
+<!DOCTYPE html><html lang="en"><head><meta name="generator" content="Hexo 3.9.0"><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta name="description" content="Tutorial - How to Use Compute Canada"><meta name="keywords" content="Cloud Computing,Machine Learning,Deep Learning"><meta name="author" content="张大珂 Dake Zhang"><meta name="copyright" content="张大珂 Dake Zhang"><title>Tutorial - How to Use Compute Canada | Dake Zhang's Website</title><link rel="shortcut icon" href="/melody-favicon.ico"><link rel="stylesheet" href="/css/index.css?version=1.6.1"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@latest/css/font-awesome.min.css?version=1.6.1"><link rel="dns-prefetch" href="https://cdn.staticfile.org"><link rel="dns-prefetch" href="https://cdn.bootcss.com"><link rel="dns-prefetch" href="https://creativecommons.org"><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.css"><script src="https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.js"></script><script src="https://cdn.jsdelivr.net/npm/blueimp-md5@2.10.0/js/md5.min.js"></script><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><script>(adsbygoogle = window.adsbygoogle || []).push({
+  google_ad_client: 'ca-pub-1982725577010543',
+  enable_page_level_ads: 'true'
+});
+</script><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  }
+} </script></head><body><i class="fa fa-arrow-right" id="toggle-sidebar" aria-hidden="true"></i><div id="sidebar"><div class="toggle-sidebar-info text-center"><span data-toggle="Toggle article">Toggle site</span><hr></div><div class="sidebar-toc"><div class="sidebar-toc__title">Catalog</div><div class="sidebar-toc__progress"><span class="progress-notice">You've read</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar"></div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Part-1-Introduction-to-Compute-Canada"><span class="toc-number">1.</span> <span class="toc-text">Part 1 - Introduction to Compute Canada</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Part-2-Getting-an-account"><span class="toc-number">2.</span> <span class="toc-text">Part 2 - Getting an account</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Part-3-Different-Services"><span class="toc-number">3.</span> <span class="toc-text">Part 3 - Different Services</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Part-4-Accessing-the-Compute-Canada"><span class="toc-number">4.</span> <span class="toc-text">Part 4 - Accessing the Compute Canada</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Part-5-Arbutus-Cloud-Service"><span class="toc-number">5.</span> <span class="toc-text">Part 5 - Arbutus Cloud Service</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Part-6-How-to-use-Cedar"><span class="toc-number">6.</span> <span class="toc-text">Part 6 - How to use Cedar</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Interactive-Jobs"><span class="toc-number">6.1.</span> <span class="toc-text">Interactive Jobs</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Batch-Jobs"><span class="toc-number">6.2.</span> <span class="toc-text">Batch Jobs</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Python"><span class="toc-number">6.3.</span> <span class="toc-text">Python</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#File-Systems"><span class="toc-number">6.4.</span> <span class="toc-text">File Systems</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#References"><span class="toc-number">7.</span> <span class="toc-text">References</span></a></li></ol></div></div><div class="author-info hide"><div class="author-info__avatar text-center"><img src="/img/avatar.jpg"></div><div class="author-info__name text-center">张大珂 Dake Zhang</div><div class="author-info__description text-center"></div><div class="follow-button"><a href="https://github.com/RickyZhang1998">Follow Me on Github</a></div><hr><div class="author-info-articles"><a class="author-info-articles__archives article-meta" href="/archives"><span class="pull-left">Articles</span><span class="pull-right">7</span></a><a class="author-info-articles__tags article-meta" href="/tags"><span class="pull-left">Tags</span><span class="pull-right">5</span></a></div></div></div><div id="content-outer"><div id="top-container" style="background-image: url(/img/top_img.jpg)"><div id="page-header"><span class="pull-left"> <a id="site-name" href="/">Dake Zhang's Website</a></span><i class="fa fa-bars toggle-menu pull-right" aria-hidden="true"></i><span class="pull-right menus"><a class="site-page" href="/">Home</a><a class="site-page" href="/archives">Archives</a><a class="site-page" href="/tags">Tags</a><a class="site-page" href="/categories">Categories</a><a class="site-page" href="/about">About Me</a></span></div><div id="post-info"><div id="post-title">Tutorial - How to Use Compute Canada</div><div id="post-meta"><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> 2019-09-12</time></div></div></div><div class="layout" id="content-inner"><article id="post"><div class="article-container" id="post-content"><p><strong>Compute Canada</strong> is a powerful platform for scientific computing.</p>
+<a id="more"></a>
+<h2 id="Part-1-Introduction-to-Compute-Canada"><a href="#Part-1-Introduction-to-Compute-Canada" class="headerlink" title="Part 1 - Introduction to Compute Canada"></a>Part 1 - Introduction to Compute Canada</h2><blockquote>
+<p>Compute Canada, in partnership with regional organizations ACENET, Calcul Québec, Compute Ontario, and WestGrid, leads the acceleration of research and innovation by deploying state-of-the-art <strong>advanced research computing (ARC) systems</strong>, storage and software solutions. Together we provide essential ARC services and infrastructure for Canadian researchers and their collaborators in all academic and industrial sectors. Our world-class team of more than 200 experts employed by 37 partner universities and research institutions across the country provides direct support to research teams. Compute Canada is a proud ambassador for Canadian excellence in advanced research computing nationally and internationally. (From Compute Canada Website)  </p>
+</blockquote>
+<p>As far as I am concerned, <a href="https://www.computecanada.ca" target="_blank" rel="noopener">Compute Canada</a> can provide me computing resources for my Machine Learning tasks.  </p>
+<blockquote>
+<p><strong>Who can register?</strong> </p>
+<ul>
+<li>Any faculty member at a Canadian university. <ul>
+<li>Faculty members can sponsor the students, research staff, and collaborators working on their research projects. </li>
+</ul>
+</li>
+<li>Researchers from government, non-profits, and industry.  </li>
+</ul>
+</blockquote>
+<h2 id="Part-2-Getting-an-account"><a href="#Part-2-Getting-an-account" class="headerlink" title="Part 2 - Getting an account"></a>Part 2 - Getting an account</h2><ol>
+<li><a href="http://ccdb.computecanada.ca" target="_blank" rel="noopener">Compute Canada DataBase (CCDB)</a> manages everything related to your access to <strong>Compute Canada</strong>. </li>
+<li>About how to get an account from Compute Canada, please refer to <a href="https://www.youtube.com/watch?v=EtFUvBYaaZE&amp;list=PLlIsA3IgWjnweFiHlOjBmsF2NTeJ6f5rT" target="_blank" rel="noopener">this video</a> on Youtube or <a href="https://www.computecanada.ca/research-portal/account-management/apply-for-an-account/" target="_blank" rel="noopener">this tutorial</a> from the Compute Canada website. </li>
+<li>Note that faculty members have to register <strong>first</strong>, and then they can <strong>confirm</strong> the request of their students, research staff, or collaborators.  </li>
+</ol>
+<h2 id="Part-3-Different-Services"><a href="#Part-3-Different-Services" class="headerlink" title="Part 3 - Different Services"></a>Part 3 - Different Services</h2><ol>
+<li>Find the description of the services provided by Compute Canada: <a href="https://docs.computecanada.ca/wiki/Cloud_resources" target="_blank" rel="noopener">https://docs.computecanada.ca/wiki/Cloud_resources</a>.</li>
+<li>Compute Canada’s national systems</li>
+</ol>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Arbutus</td>
+<td>An extension to the West Cloud (UVic), in production since Sep. 2016</td>
+</tr>
+<tr>
+<td>Cedar (SFU), Graham (Waterloo)</td>
+<td>General-purpose clusters, in production since Jun. 2017</td>
+</tr>
+<tr>
+<td>Niagara (Toronto)</td>
+<td>A large parallel cluster, in production since Apr. 2018</td>
+</tr>
+<tr>
+<td>Béluga (Québec)</td>
+<td>General-purpose system, in production in early 2019</td>
+</tr>
+</tbody>
+</table>
+</div>
+<ol>
+<li>Comparison between <strong>Cedar</strong> and <strong>Graham</strong> <img src="https://img-blog.csdnimg.cn/20190831010543448.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwOTg5ODY2,size_16,color_FFFFFF,t_70" alt="Comparison between Cedar and Graham"> </li>
+</ol>
+<h2 id="Part-4-Accessing-the-Compute-Canada"><a href="#Part-4-Accessing-the-Compute-Canada" class="headerlink" title="Part 4 - Accessing the Compute Canada"></a>Part 4 - Accessing the Compute Canada</h2><ol>
+<li>Logging into the compute systems.     <ol>
+<li>The Graham address: graham.computecanada.ca     </li>
+<li>The Cedar address: cedar.computecanada.ca     </li>
+<li>Use SSH to login to the specified system: <code>ssh username@address</code>. </li>
+</ol>
+</li>
+<li>Accessing the file system and transferring files.     <ol>
+<li>Graham Globus Endpoint: computecanada#graham     </li>
+<li>Cedar Globus Endpoint: computecanada#cedar     </li>
+<li>From a Unix terminal <strong>scp</strong> transfer to address:/home/user<br> <code>bash     scp -r folderName username@vtds.computecanada.ca:/home/username</code></li>
+</ol>
+</li>
+</ol>
+<h2 id="Part-5-Arbutus-Cloud-Service"><a href="#Part-5-Arbutus-Cloud-Service" class="headerlink" title="Part 5 - Arbutus Cloud Service"></a>Part 5 - Arbutus Cloud Service</h2><ol>
+<li>Website: <a href="https://arbutus.cloud.computecanada.ca" target="_blank" rel="noopener">https://arbutus.cloud.computecanada.ca</a> </li>
+<li>It seems that this resource is not allocated to us now.        </li>
+</ol>
+<h2 id="Part-6-How-to-use-Cedar"><a href="#Part-6-How-to-use-Cedar" class="headerlink" title="Part 6 - How to use Cedar"></a>Part 6 - How to use Cedar</h2><p>I guess Graham is similar to Cedar. So methods mentioned here should be compatible with Graham.<br> <strong>!!! Important !!!</strong> “By policy, <strong>Graham’s compute nodes cannot access the internet</strong>. If you need an exception to this rule, contact technical support with the following information …” Since we might use <code>pip</code> to install related packages, I strongly suggest not use Graham. (Don’t ask why I have this suggestion.) </p>
+<h3 id="Interactive-Jobs"><a href="#Interactive-Jobs" class="headerlink" title="Interactive Jobs"></a>Interactive Jobs</h3><ol>
+<li>For small tasks and beginners, this is the easiest and most convenient way to use computing resources in Compute Canada. </li>
+<li>Batch submission is still the most common and most efficient way to take advantage of clusters. </li>
+<li>Interactive jobs have the following features:     <ul>
+<li>Data exploration at the command line.     </li>
+<li>Interactive “console tools” like R and iPython.     </li>
+<li>Significant software development, debugging, or compiling </li>
+</ul>
+</li>
+<li><p>We can start an interactive session on a compute node with <code>salloc</code>.<br> Here is an example, where we request two tasks, which correspond to two CPU cores, for an hour. Normally, I can get the node immediately. But it depends on the requested resources. </p>
+ <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ salloc --time=1:0:0 --ntasks=2 --account=def-XXX --mem-per-cpu=16000M 	</span><br><span class="line">salloc: Pending job allocation 19040977 	</span><br><span class="line">salloc: job 19040977 queued and waiting <span class="keyword">for</span> resources 	</span><br><span class="line">salloc: job 19040977 has been allocated resources 	</span><br><span class="line">salloc: Granted job allocation 19040977 	</span><br><span class="line">salloc: Waiting <span class="keyword">for</span> resource configuration 	</span><br><span class="line">salloc: Nodes gra808 are ready <span class="keyword">for</span> job 	</span><br><span class="line">$ ... <span class="comment"># do some work 	</span></span><br><span class="line">$ <span class="built_in">exit</span> <span class="comment"># terminate the allocation 	salloc: Relinquishing job allocation 19040977</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>It is also possible to run graphical programs interactively on a compute node by adding the —x11 flag to your salloc command. In order for this to work, you must first connect to the cluster with X11 forwarding enabled (see the SSH page for instructions on how to do that). </p>
+</li>
+<li>Note that the SHH connection will be automatically terminated after a specific time if there is not any response. So you have to keep the connection active like by typing the “carriage return” if you plan to run a time-consuming project. Or, you can choose to use the batch jobs.   </li>
+</ol>
+<h3 id="Batch-Jobs"><a href="#Batch-Jobs" class="headerlink" title="Batch Jobs"></a>Batch Jobs</h3><ol>
+<li>Create a new bash file using <code>vim XXX.sh</code>. </li>
+<li>The head content of this bash file should be like this.      <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment">#!/bin/bash  		              # specifies that this script is a bash script 		</span></span><br><span class="line"><span class="comment">#SBATCH --reservation=masao_10    # SBATCH refer to the batch scheduling sytem 		 </span></span><br><span class="line">                         <span class="comment"># This line is used only when you have reservation of nodes 		</span></span><br><span class="line"><span class="comment">#SBATCH --account=def-myAccount	  # Normally, the account is def-username 		</span></span><br><span class="line"><span class="comment">#SBATCH --ntasks=1 		          # how many CPUs are needed 		</span></span><br><span class="line"><span class="comment">#SBATCH --mem-per-cpu=2000mb 		</span></span><br><span class="line"><span class="comment">#SBATCH --time=00:05:00 		</span></span><br><span class="line"><span class="comment">#SBATCH --mail-type=ALL 		  # Use the email to notify the status 		</span></span><br><span class="line"><span class="comment">#SBATCH --mail-user-myEmail@emailAddress  	</span></span><br><span class="line">./hello</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h3 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h3><p> Here are some rules to use Python in your job. </p>
+<ol>
+<li>Load an interpreter.     <ul>
+<li>Use <code>module avail python</code> to discover the versions of Python available.     </li>
+<li>Use <code>module load python/X.X</code> to load the version of your choice.     </li>
+<li>In addition to the base Python module, the <strong>SciPy</strong> package is also available as an environment module. The <code>scipy-stack</code> module includes: NumPy, SciPy, Matplotlib (dateutil, pytz), IPython (pyzmq, tornado), pandas, Sympy, nose. </li>
+</ul>
+</li>
+<li>Create and use our own virtual environment. <ul>
+<li>(<strong>IMPORTANT</strong>) We can easily install Python modules in our virtual environments. We are suggested to create our Python virtual environment(s) in your home directory.     </li>
+<li>This is very useful because some packages of our need may not be integrated in the Cedar system and we are not authorized to modify the Python environment provided by the system.      </li>
+<li>Make sure we have selected a Python version with <code>module load python</code>. Use the following command to create our environment, where <code>ENV</code> is the name of the empty directory containing our environment.<br>  <code>bash         virtualenv --no-download ~/ENV</code>    </li>
+<li>The environment must be activated before use.<br>  <code>bash         source ~/ENV/bin/activate</code>    </li>
+<li>We also should upgrade <code>pip</code> in the environment.<br>  <code>bash         pip install --no-index --upgrade pip</code>    </li>
+<li>Use <code>deactivate</code> to exit the virtual environment.  </li>
+</ul>
+</li>
+</ol>
+<h3 id="File-Systems"><a href="#File-Systems" class="headerlink" title="File Systems"></a>File Systems</h3><ol>
+<li><code>home directory</code>: rather small quota, so do not keep data here. </li>
+<li><code>projects</code>: links to other project directories, for main storage. </li>
+<li><code>scratch</code>: used for running jobs, and storage can be cleaned up from time to time. </li>
+<li>Use command <code>diskusage_report</code> to get the quotas information. </li>
+<li>Notice that there are storage limits and limits on the file number in different directories.      </li>
+</ol>
+<h2 id="References"><a href="#References" class="headerlink" title="References"></a>References</h2><ol>
+<li><a href="https://www.youtube.com/results?search_query=Compute%20Canada" target="_blank" rel="noopener">Compute Canada Youtube Channel</a> </li>
+<li><a href="https://www.youtube.com/user/WGSeminarSeries" target="_blank" rel="noopener">WestGrid Youtube Channel</a> </li>
+<li><a href="https://www.computecanada.ca/home/" target="_blank" rel="noopener">Compute Canada Official Website</a> </li>
+<li><a href="https://www.westgrid.ca/" target="_blank" rel="noopener">WestGrid Official Website</a> </li>
+</ol>
+<p>(如果觉得这篇文章有用，欢迎扫描下方二维码支持作者！)<br>PS: If you think this post is helpful, welcome to scan the QR code below to support the author.</p>
+</div></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="mailto:undefined">张大珂 Dake Zhang</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="http://yoursite.com/2019/09/12/Tutorial - How to Use Compute Canada/">http://yoursite.com/2019/09/12/Tutorial - How to Use Compute Canada/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/Cloud-Computing/">Cloud Computing</a><a class="post-meta__tags" href="/tags/Machine-Learning/">Machine Learning</a><a class="post-meta__tags" href="/tags/Deep-Learning/">Deep Learning</a></div><div class="post-qr-code"><div class="post-qr-code-item"><img class="post-qr-code__img" src="/img/alipay.png"><div class="post-qr-code__desc">Support - AliPay</div></div><div class="post-qr-code-item"><img class="post-qr-code__img" src="/img/wechat.png"><div class="post-qr-code__desc">Support - WechatPay</div></div></div><nav id="pagination"><div class="next-post pull-right"><a href="/2019/01/21/LaTeX入门——第五部分/"><span>LaTeX入门 第五部分</span><i class="fa fa-chevron-right"></i></a></div></nav><div class="post-adv"></div><div id="gitalk-container"></div><script>var gitalk = new Gitalk({
+  clientID: '8c2f71dce688ba07586d',
+  clientSecret: 'ed77b6728e947441a81c837bb3e679b66b0c9bec',
+  repo: 'RickyZhang1998.github.io',
+  owner: 'RickyZhang1998',
+  admin: 'RickyZhang1998',
+  id: md5(decodeURI(location.pathname)),
+  language: 'en'
+})
+gitalk.render('gitalk-container')</script></div></div><footer class="footer-bg" style="background-image: url(/img/top_img.jpg)"><div class="layout" id="footer"><div class="copyright">&copy;2018 - 2020 By 张大珂 Dake Zhang</div><div class="framework-info"><span>Driven - </span><a href="http://hexo.io"><span>Hexo</span></a><span class="footer-separator">|</span><span>Theme - </span><a href="https://github.com/Molunerfinn/hexo-theme-melody"><span>Melody</span></a></div><div class="footer_custom_text">生生不息，繁荣昌盛。Live long and prosper.</div><div class="busuanzi"><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><span id="busuanzi_container_page_pv"><i class="fa fa-file-o"></i><span id="busuanzi_value_page_pv"></span><span></span></span></div></div></footer><i class="fa fa-arrow-up" id="go-up" aria-hidden="true"></i><script src="https://cdn.jsdelivr.net/npm/animejs@latest/anime.min.js"></script><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@latest/velocity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-ui-pack@latest/velocity.ui.min.js"></script><script src="/js/utils.js?version=1.6.1"></script><script src="/js/fancybox.js?version=1.6.1"></script><script src="/js/sidebar.js?version=1.6.1"></script><script src="/js/copy.js?version=1.6.1"></script><script src="/js/fireworks.js?version=1.6.1"></script><script src="/js/transition.js?version=1.6.1"></script><script src="/js/scroll.js?version=1.6.1"></script><script src="/js/head.js?version=1.6.1"></script><script type="text/x-mathjax-config">MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+    processEscapes: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+  },
+  CommonHTML: {
+    linebreaks: { automatic: true, width: "90% container" }
+  },
+  "HTML-CSS": { 
+    linebreaks: { automatic: true, width: "90% container" }
+  },
+  "SVG": { 
+    linebreaks: { automatic: true, width: "90% container" }
+  }
+});
+</script><script type="text/x-mathjax-config">MathJax.Hub.Queue(function() {
+  var all = MathJax.Hub.getAllJax(), i;
+  for (i=0; i < all.length; i += 1) {
+    all[i].SourceElement().parentNode.className += ' has-jax';
+  }
+});
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><script>if(/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+  $('#nav').addClass('is-mobile')
+  $('footer').addClass('is-mobile')
+}</script></body></html>

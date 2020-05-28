@@ -1,0 +1,63 @@
+<!DOCTYPE html><html lang="en"><head><meta name="generator" content="Hexo 3.9.0"><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta name="description" content="LaTeX入门 第四部分"><meta name="keywords" content="LaTeX"><meta name="author" content="张大珂 Dake Zhang"><meta name="copyright" content="张大珂 Dake Zhang"><title>LaTeX入门 第四部分 | Dake Zhang's Website</title><link rel="shortcut icon" href="/melody-favicon.ico"><link rel="stylesheet" href="/css/index.css?version=1.6.1"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@latest/css/font-awesome.min.css?version=1.6.1"><link rel="dns-prefetch" href="https://cdn.staticfile.org"><link rel="dns-prefetch" href="https://cdn.bootcss.com"><link rel="dns-prefetch" href="https://creativecommons.org"><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.css"><script src="https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.js"></script><script src="https://cdn.jsdelivr.net/npm/blueimp-md5@2.10.0/js/md5.min.js"></script><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><script>(adsbygoogle = window.adsbygoogle || []).push({
+  google_ad_client: 'ca-pub-1982725577010543',
+  enable_page_level_ads: 'true'
+});
+</script><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  }
+} </script></head><body><i class="fa fa-arrow-right" id="toggle-sidebar" aria-hidden="true"></i><div id="sidebar"><div class="toggle-sidebar-info text-center"><span data-toggle="Toggle article">Toggle site</span><hr></div><div class="sidebar-toc"><div class="sidebar-toc__title">Catalog</div><div class="sidebar-toc__progress"><span class="progress-notice">You've read</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar"></div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#I-图片的插入"><span class="toc-number">1.</span> <span class="toc-text">I. 图片的插入</span></a></li></ol></div></div><div class="author-info hide"><div class="author-info__avatar text-center"><img src="/img/avatar.jpg"></div><div class="author-info__name text-center">张大珂 Dake Zhang</div><div class="author-info__description text-center"></div><div class="follow-button"><a href="https://github.com/RickyZhang1998">Follow Me on Github</a></div><hr><div class="author-info-articles"><a class="author-info-articles__archives article-meta" href="/archives"><span class="pull-left">Articles</span><span class="pull-right">7</span></a><a class="author-info-articles__tags article-meta" href="/tags"><span class="pull-left">Tags</span><span class="pull-right">5</span></a></div></div></div><div id="content-outer"><div id="top-container" style="background-image: url(/img/top_img.jpg)"><div id="page-header"><span class="pull-left"> <a id="site-name" href="/">Dake Zhang's Website</a></span><i class="fa fa-bars toggle-menu pull-right" aria-hidden="true"></i><span class="pull-right menus"><a class="site-page" href="/">Home</a><a class="site-page" href="/archives">Archives</a><a class="site-page" href="/tags">Tags</a><a class="site-page" href="/categories">Categories</a><a class="site-page" href="/about">About Me</a></span></div><div id="post-info"><div id="post-title">LaTeX入门 第四部分</div><div id="post-meta"><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> 2019-01-20</time></div></div></div><div class="layout" id="content-inner"><article id="post"><div class="article-container" id="post-content"><p>书接上文，本次重点讲述LaTeX中图片的插入，需要导入宏包“graphicx”。</p>
+<a id="more"></a>
+<h2 id="I-图片的插入"><a href="#I-图片的插入" class="headerlink" title="I. 图片的插入"></a>I. 图片的插入</h2><ol>
+<li><p>使用命令<code>\includegraphics{*.eps}</code>。LaTeX支持的图片格式为“.eps”，由Adobe公司提出，既支持矢量图也支持位图。</p>
+ <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">\begin&#123;figure&#125;</span><br><span class="line">\begin&#123;center&#125;</span><br><span class="line">\includegraphics[scale=0.3, angle=30]&#123;graph.eps&#125; </span><br><span class="line">% 中括号里面的参数指定图片的缩放、旋转等，注意在MacTex中，角度正值为逆时针旋转</span><br><span class="line">\caption&#123;Point Cloud where window = 100&#125;</span><br><span class="line">\label&#123;default&#125;</span><br><span class="line">\end&#123;center&#125;</span><br><span class="line">\end&#123;figure&#125;</span><br></pre></td></tr></table></figure>
+<p> 效果如下图所示：<br> <img src="https://img-blog.csdnimg.cn/2019012015172171.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwOTg5ODY2,size_16,color_FFFFFF,t_70" alt="includegraphics示例"></p>
+</li>
+<li>eps格式图片的生成：<ol>
+<li>通过软件生成，例如对于matlab生成的图片，另存为eps格式即可。</li>
+<li>使用Adobe Acropbat Pro提取PDF文件中的图片，通过“页面提取-另存为”。</li>
+<li>借助Word、PDF打印机和Adobe Acropbat Pro进行操作，适用于emf和wmf等格式。即先插入到Word中，然后导出成PDF格式，最后再进行页面提取。</li>
+</ol>
+</li>
+</ol>
+<p>(如果觉得这篇文章有用，欢迎扫描下方二维码支持作者！)<br>PS: If you think this post is helpful, welcome to scan the QR code below to support the author.</p>
+</div></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="mailto:undefined">张大珂 Dake Zhang</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="http://yoursite.com/2019/01/20/LaTeX入门——第四部分/">http://yoursite.com/2019/01/20/LaTeX入门——第四部分/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/LaTeX/">LaTeX</a></div><div class="post-qr-code"><div class="post-qr-code-item"><img class="post-qr-code__img" src="/img/alipay.png"><div class="post-qr-code__desc">Support - AliPay</div></div><div class="post-qr-code-item"><img class="post-qr-code__img" src="/img/wechat.png"><div class="post-qr-code__desc">Support - WechatPay</div></div></div><nav id="pagination"><div class="prev-post pull-left"><a href="/2019/01/21/LaTeX入门——第五部分/"><i class="fa fa-chevron-left">  </i><span>LaTeX入门 第五部分</span></a></div><div class="next-post pull-right"><a href="/2019/01/19/LaTeX入门——第三部分/"><span>LaTeX入门 第三部分</span><i class="fa fa-chevron-right"></i></a></div></nav><div class="post-adv"></div><div id="gitalk-container"></div><script>var gitalk = new Gitalk({
+  clientID: '8c2f71dce688ba07586d',
+  clientSecret: 'ed77b6728e947441a81c837bb3e679b66b0c9bec',
+  repo: 'RickyZhang1998.github.io',
+  owner: 'RickyZhang1998',
+  admin: 'RickyZhang1998',
+  id: md5(decodeURI(location.pathname)),
+  language: 'en'
+})
+gitalk.render('gitalk-container')</script></div></div><footer class="footer-bg" style="background-image: url(/img/top_img.jpg)"><div class="layout" id="footer"><div class="copyright">&copy;2018 - 2020 By 张大珂 Dake Zhang</div><div class="framework-info"><span>Driven - </span><a href="http://hexo.io"><span>Hexo</span></a><span class="footer-separator">|</span><span>Theme - </span><a href="https://github.com/Molunerfinn/hexo-theme-melody"><span>Melody</span></a></div><div class="footer_custom_text">生生不息，繁荣昌盛。Live long and prosper.</div><div class="busuanzi"><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><span id="busuanzi_container_page_pv"><i class="fa fa-file-o"></i><span id="busuanzi_value_page_pv"></span><span></span></span></div></div></footer><i class="fa fa-arrow-up" id="go-up" aria-hidden="true"></i><script src="https://cdn.jsdelivr.net/npm/animejs@latest/anime.min.js"></script><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@latest/velocity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-ui-pack@latest/velocity.ui.min.js"></script><script src="/js/utils.js?version=1.6.1"></script><script src="/js/fancybox.js?version=1.6.1"></script><script src="/js/sidebar.js?version=1.6.1"></script><script src="/js/copy.js?version=1.6.1"></script><script src="/js/fireworks.js?version=1.6.1"></script><script src="/js/transition.js?version=1.6.1"></script><script src="/js/scroll.js?version=1.6.1"></script><script src="/js/head.js?version=1.6.1"></script><script type="text/x-mathjax-config">MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+    processEscapes: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+  },
+  CommonHTML: {
+    linebreaks: { automatic: true, width: "90% container" }
+  },
+  "HTML-CSS": { 
+    linebreaks: { automatic: true, width: "90% container" }
+  },
+  "SVG": { 
+    linebreaks: { automatic: true, width: "90% container" }
+  }
+});
+</script><script type="text/x-mathjax-config">MathJax.Hub.Queue(function() {
+  var all = MathJax.Hub.getAllJax(), i;
+  for (i=0; i < all.length; i += 1) {
+    all[i].SourceElement().parentNode.className += ' has-jax';
+  }
+});
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><script>if(/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+  $('#nav').addClass('is-mobile')
+  $('footer').addClass('is-mobile')
+}</script></body></html>
